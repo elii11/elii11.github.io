@@ -283,6 +283,10 @@ li {
 }
 
 @media only screen and (min-width: 800px) {
+  
+  * {
+    overflow: hidden !important;
+  }
 
   .wrapper {
     grid-template-columns: [start-nav] 10% [end-nav start-content] 1fr [full-nav-end] 10% [end-content] !important;
