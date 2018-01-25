@@ -49,4 +49,15 @@ $(document).ready(function() {
 
     });
   }
+  
+  window.sr = ScrollReveal();
+      sr.reveal('img', {
+        duration: 1500,
+        origin: 'bottom'
+      });
+
+      sr.reveal('.main-text, .sub-text', {
+        duration: 1500,
+        origin: 'top'
+      });
 });
