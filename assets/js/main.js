@@ -1,5 +1,18 @@
 
 $(document).ready(function() {
+  
+    
+  window.sr = ScrollReveal();
+      sr.reveal('img', {
+        duration: 2000,
+        origin: 'bottom'
+      });
+
+      sr.reveal('.main-text, .sub-text', {
+        duration: 2000,
+        origin: 'top'
+      });
+  
   var widthW = $('.wrapper').width();
   if(widthW < 800) {
     $('.ham').on('click', function(e) {
@@ -49,15 +62,5 @@ $(document).ready(function() {
 
     });
   }
-  
-  window.sr = ScrollReveal();
-      sr.reveal('img', {
-        duration: 1500,
-        origin: 'bottom'
-      });
 
-      sr.reveal('.main-text, .sub-text', {
-        duration: 1500,
-        origin: 'top'
-      });
 });
