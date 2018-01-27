@@ -5,9 +5,12 @@
   box-sizing: border-box;
 }
 
+p {
+  color: #000;
+}
+
 nav.navbar {
   background: #fff!important;
-  /*margin-left: 20%;*/
 }
 
 ul.navbar-nav .mr-auto .mt-2 mt-lg-0 {
@@ -29,6 +32,7 @@ a {
 a.nav-link {
   color: #6F627C !important;
   font-size: 17px;
+  margin-left: 80px;
 } a::after {
   content: '';
   width: 0%;
@@ -68,17 +72,19 @@ section.main {
     -webkit-user-select: none;  /* Chrome all / Safari all */
     -moz-user-select: none;     /* Firefox all */
     -ms-user-select: none;      /* IE 10+ */
-    user-select: none; 
+	  user-select: none;
   }
  .sect1 .names p {
     font-style: italic !important;
     font-size: 200%;
     font-family: 'Dancing Script', cursive;
+    color: inherit;
   }
   .sect1 h1 {
     font-size: 200%;
     text-transform: uppercase;
     font-family: 'Lato', sans;
+    font-weight: 600;
   }
   .date {
     color: #fff;
@@ -106,13 +112,14 @@ section.main {
     max-width: 100%;
     height: auto;
     padding: 5px 0px;
+  } section .gallery img:hover {
+    opacity: 0.6;
   }
 
   section h1.our-story-heading::before,
   section h1.our-story-heading::after {
     content: '';
     position: absolute;
-    /*top: 0px;*/
     width: 100%;
     height: 2px;
     background: #a68469;
@@ -129,32 +136,50 @@ section.main {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-
+  section .heading {
+    font-size: 42px;
+    text-transform: uppercase;
+  }
   section .info {
     height: 400px;
     background-color: #fff;
     position: relative;
+    font-size: 18px;
   } section .info > div:only-child {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
+  /*section .info > div > div {
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    border-top: 4px solid #a68469;
+    border-bottom: 4px solid #a68469;
+  }*/
   #details {
-    background-color: #d1dac9;
+    /*background-color: #d1dac9;*/
   } section .details {
     /*color: #fff;*/
     padding: 40px 20px;
   } .details > div > div {
-    width: 40%;
-    margin: 0 auto;
+    margin-top: 20px;
     line-height: 30px;
     font-style: italic;
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    border: 4px solid #a68469;
   }
 
   footer {
     background-color: #2E2E2E;
     padding: 20px 0px;
+  } footer p {
     color: #fff;
+  }
+
+  @media  (max-width: 768px) {
+    .navbar-collapse a.nav-link {
+      margin-left: 0px;
+    }
   }
