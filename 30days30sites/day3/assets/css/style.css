@@ -99,21 +99,7 @@ footer {
 @media (min-width: 576px) {
   #carouselExampleControls
   {
-      height: 300px;
-  }
-}
-
-@media (min-width: 768px) {
-  #carouselExampleControls
-  {
-    height: 400px;
-  }
-}
-
-@media (min-width: 992px) {
-  #carouselExampleControls
-  {
-    height: 800px;
+      height: 100%;
   }
 }
 
